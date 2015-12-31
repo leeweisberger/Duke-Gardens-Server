@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+var debug = require('debug')('duke_gardens');
+var app = require('../app');
+
+app.set('port', 80);
+
+var server = app.listen(80, function() {
+  console.log('Express server listening on port ' + server.address().port);
+});
